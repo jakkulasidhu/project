@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineTime - Music Concert</title>
+    <link rel="icon" href="cropimg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { background:#111; color:white; }
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      font-size: 18px;
+      color: #ddd;
+      margin-right: 20px;
+    }
+    .nav-link:hover {
+      color: #ffb243;
+    }
+    .banner-img { width:100%; height:300px; object-fit:cover; border-radius:8px; }
+    .box { background:#1a1a1a; padding:20px; border-radius:8px; }
+    .btn-book { background:#ffb243; border:none; font-weight:600; }
+  </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3 ">
+    <a class="navbar-brand" href="index.html " style="color: #ffb243;"> CineTime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+         <!-- search button -->
+
+      <form class="d-flex flex-grow-1 me-3">
+        <input class="form-control me-2" type="search" placeholder="Search for movies..." aria-label="Search">
+        <button class="btn btn-warning " type="submit">Search</button>
+      </form>
+
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav ms-auto me-3">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#movies">Movies</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sports">Sports</a>
+        </li>
+
+      </ul>
+
+      <!-- SIGN IN BUTTON -->
+       
+      <a href="sig.html">
+        <button class="btn btn-warning p-2 p-2 pt-1 pb-1" style="font-size: 14px; font-weight: 400;">
+          Sign In/Login
+        </button>
+        
+      </a>
+
+    </div>
+  </nav>
+  <div class="container mt-4">
+
+    <!-- Banner -->
+    <img src="https://marketplace.canva.com/EAE7N77AogY/1/0/1131w/canva-live-concert-(poster)-RWodq8Z96Mw.jpg" class="banner-img">
+
+    <div class="box mt-4">
+      <h2 style="color:#ffb243;">Music Concert</h2>
+      
+      <p><strong>Date:</strong> DEC 15, 2025</p>
+      <p><strong>Time:</strong> 7:00 PM</p>
+      <p><strong>Location:</strong> Gachibowli Stadium, Hyderabad</p>
+
+      <h4 class="mt-3">About Event</h4>
+      <p>
+        Enjoy an electrifying live concert with powerful music, stage lighting, 
+        and energetic performances. A perfect event for music lovers!
+      </p>
+
+      <h4 class="mt-3">Highlights</h4>
+      <p>• Live Band Performance<br>
+         • LED Stage Lighting<br>
+         • Outdoor Concert Experience
+      </p>
+
+      <h4 class="mt-3">Artist</h4>
+      <p>• Special Guest: Armaan Malik</p>
+
+      <a href="seatbooking5.html">
+        <button class="btn btn-warning btn-book px-4 py-2 mt-2">Book Tickets</button>
+      </a>
+    </div>
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

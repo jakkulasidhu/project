@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineTime - Seat Booking</title>
+    <link rel="icon" href="cropimg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+   body {
+      background-color: #0d0f12;
+      color: white;
+    }
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      font-size: 18px;
+      color: #ddd;
+      margin-right: 20px;
+    }
+    .nav-link:hover {
+      color: #ffb243;
+    }
+    
+    .screen {
+      background:white;
+      height:6px;
+      border-radius:5px;
+      margin:20px 0;
+    }
+
+    .show-info p{
+       color:#bfc3c8;
+        margin-bottom:8px
+
+       }
+      
+        .seat {
+          width: 35px;
+      height: 35px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    display:inline-flex;
+      justify-content:center;
+      align-items:center;
+       background:#444;
+         
+      font-weight:bold;
+  }
+
+  /* Selected seat style */
+  input[type="checkbox"]:checked + .seat {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+  }
+
+  /* Hide checkboxes */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  </style>
+</head>
+
+<body>
+   <!--  MAIN NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3">
+    <a class="navbar-brand" href="index.html " style="color: #ffb243;"> CineTime</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+         <!-- search button -->
+
+      <form class="d-flex flex-grow-1 me-3">
+        <input class="form-control me-2" type="search" placeholder="Search for movies..." aria-label="Search">
+        <button class="btn btn-warning " type="submit">Search</button>
+      </form>
+
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav ms-auto me-3">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#movies">Movies</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sports">Sports</a>
+        </li>
+
+      </ul>
+
+      <!-- SIGN IN BUTTON -->
+       
+      <a href="sig.html">
+        <button class="btn btn-warning p-2 p-2 pt-1 pb-1" style="font-size: 14px; font-weight: 400;">
+          Sign In/Login
+        </button>
+        
+      </a>
+
+    </div>
+  </nav>
+
+
+
+<div class="container mt-4">
+
+  <h2 style="color:#ffb243;">Select Your Seats</h2>
+
+  <div class="show-info">
+      <p>CONCERT: <strong>Music Concert</strong></p>
+      <p>  STADIUM: <strong> Gachibowli Stadium</strong> </p>
+      <p> Time: <strong>6:30 PM</strong></p>
+    </div>
+
+  <div class="screen"></div>
+  <p class="text-center text-secondary">Screen This Way</p>
+
+  <div class="text-center">
+
+  <!-- ROW A -->
+  <div>
+    <label><input type="checkbox" value="A1"><span class="seat">A1</span></label>
+    <label><input type="checkbox" value="A2"><span class="seat">A2</span></label>
+    <label><input type="checkbox" value="A3"><span class="seat">A3</span></label>
+    <label><input type="checkbox" value="A4"><span class="seat">A4</span></label>
+    <label><input type="checkbox" value="A5"><span class="seat">A5</span></label>
+  </div>
+
+  <!-- ROW B -->
+  <div>
+    <label><input type="checkbox" value="B1"><span class="seat">B1</span></label>
+    <label><input type="checkbox" value="B2"><span class="seat">B2</span></label>
+    <label><input type="checkbox" value="B3"><span class="seat">B3</span></label>
+    <label><input type="checkbox" value="B4"><span class="seat">B4</span></label>
+    <label><input type="checkbox" value="B5"><span class="seat">B5</span></label>
+  </div>
+
+  <!-- ROW C -->
+  <div>
+    <label><input type="checkbox" value="C1"><span class="seat">C1</span></label>
+    <label><input type="checkbox" value="C2"><span class="seat">C2</span></label>
+    <label><input type="checkbox" value="C3"><span class="seat">C3</span></label>
+    <label><input type="checkbox" value="C4"><span class="seat">C4</span></label>
+    <label><input type="checkbox" value="C5"><span class="seat">C5</span></label>
+  </div>
+
+  <!-- ROW D -->
+  <div>
+    <label><input type="checkbox" value="D1"><span class="seat">D1</span></label>
+    <label><input type="checkbox" value="D2"><span class="seat">D2</span></label>
+    <label><input type="checkbox" value="D3"><span class="seat">D3</span></label>
+    <label><input type="checkbox" value="D4"><span class="seat">D4</span></label>
+    <label><input type="checkbox" value="D5"><span class="seat">D5</span></label>
+  </div>
+
+</div>
+<div class="text-center">
+
+  <!-- ROW A -->
+  <div>
+    <label><input type="checkbox" value="A1"><span class="seat">A1</span></label>
+    <label><input type="checkbox" value="A2"><span class="seat">A2</span></label>
+    <label><input type="checkbox" value="A3"><span class="seat">A3</span></label>
+    <label><input type="checkbox" value="A4"><span class="seat">A4</span></label>
+    <label><input type="checkbox" value="A5"><span class="seat">A5</span></label>
+  </div>
+
+  <!-- ROW B -->
+  <div>
+    <label><input type="checkbox" value="B1"><span class="seat">B1</span></label>
+    <label><input type="checkbox" value="B2"><span class="seat">B2</span></label>
+    <label><input type="checkbox" value="B3"><span class="seat">B3</span></label>
+    <label><input type="checkbox" value="B4"><span class="seat">B4</span></label>
+    <label><input type="checkbox" value="B5"><span class="seat">B5</span></label>
+  </div>
+
+  <!-- ROW C -->
+  <div>
+    <label><input type="checkbox" value="C1"><span class="seat">C1</span></label>
+    <label><input type="checkbox" value="C2"><span class="seat">C2</span></label>
+    <label><input type="checkbox" value="C3"><span class="seat">C3</span></label>
+    <label><input type="checkbox" value="C4"><span class="seat">C4</span></label>
+    <label><input type="checkbox" value="C5"><span class="seat">C5</span></label>
+  </div>
+
+  <!-- ROW D -->
+  <div>
+    <label><input type="checkbox" value="D1"><span class="seat">D1</span></label>
+    <label><input type="checkbox" value="D2"><span class="seat">D2</span></label>
+    <label><input type="checkbox" value="D3"><span class="seat">D3</span></label>
+    <label><input type="checkbox" value="D4"><span class="seat">D4</span></label>
+    <label><input type="checkbox" value="D5"><span class="seat">D5</span></label>
+  </div>
+
+</div>
+  
+
+
+  <a href="payment.html">
+    <button class="btn btn-warning w-100 mt-4" style="font-weight:600;">Proceed to Payment</button>
+  </a>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

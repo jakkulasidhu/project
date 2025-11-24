@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineTime</title>
+         <!-- css link -->
+  <link rel="stylesheet" href="project.css">
+
+  <!-- title icon -->
+  <link rel="icon" href="cropimg.png">
+
+    <!-- icon link -->
+
+  <script src="https://kit.fontawesome.com/99d058ac5e.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #0d0f12;
+      color: white;
+    }
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      font-size: 18px;
+      color: #ddd;
+      margin-right: 20px;
+    }
+    .nav-link:hover {
+      color: #ffb243;
+    }
+    .movie-card img {
+      height: 300px;
+       object-fit: cover;
+      border-radius: 10px;
+    }
+    .movie-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .book-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+
+    .footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #444;
+    gap: 20px;
+}
+
+.footer-top .item i {
+    font-size: 40px;
+    color: rgb(151, 148, 148);
+    margin-bottom: 8px;
+}
+
+.footer-top .item p {
+    font-size: 14px;
+    color: rgb(181, 178, 178);
+    font-weight: 600;
+    margin-top: 8px;
+}
+.footer-sections {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.section h4 {
+    color: rgb(196, 193, 193);
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.section p {
+    font-size: 13px;
+    line-height: 1.7;
+    
+}
+
+.social-icons {
+    text-align: center;
+}
+.social-icons i:hover{
+  color: #ffb243;
+}
+
+  </style>
+
+</head>
+<body>
+
+  <!--  MAIN NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3 ">
+    <a class="navbar-brand" href="#"><img src="cropimg-removebg-preview.png" width="100px" alt=""> </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+         <!-- search button -->
+
+       <form class="d-flex flex-grow-1 me-3">
+
+        <input class="form-control me-2" type="search" placeholder="Search for movies..." aria-label="Search">
+        <button class="btn btn-warning " type="submit">Search</button>
+      </form>
+
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav ms-auto me-3">
+
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#movies">Movies</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sports">Sports</a>
+        </li>
+
+      </ul>
+
+      <!-- SIGN IN BUTTON -->
+       
+      <a href="sig.html">
+        <button class="btn btn-warning p-2 p-2 pt-1 pb-1" style="font-size: 14px; font-weight: 400;">
+          Sign In/Login
+        </button>
+        
+      </a>
+
+    </div>
+  </nav>
+  <!--  NAVBAR END -->
+
+
+  <!-- Banner -->
+ <section id="Banner">
+  <div class="continer">
+    <div class="row">
+      <div class="col-12 mt-2" >
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1761907921032_amusementparkdesktop.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1762927603667_theconjuringlastritesweb.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1763188137924_linkinparkwebnew.jpg" class="d-block w-100 "  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=" https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1760430005960_popccweb.jpg" class="d-block w-100 "  alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </div>
+      
+    </div>
+  </div>
+ </section>
+
+  <!-- Now Showing Section -->
+   <section id="movies">
+  <div class="container mt-5">
+    <h2 class="mb-4">Now Showing</h2>
+
+    <div class="row">
+
+      <!-- Movie 1 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+         <a  href="movie1.html"> <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kaantha-et00432079-1762856757.jpg" class="img-fluid"></a>
+          <div class="movie-title">KAANTHA</div>
+          <div>Action/Drama</div>
+          <a href="movie1.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Movie 2 -->
+      <div class=" text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+         <a href="movie2.html"> <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-girlfriend-et00423419-1733756512.jpg" class="img-fluid"></a>
+          <div class="movie-title">THE GIRLFRIEND</div>
+          <div>Romance / Thriller</div>
+          <a href="movie2.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Movie 3 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+         <a  href="movie3.html"> <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/paanch-minar-et00470806-1763119659.jpg" class="img-fluid"></a>
+          <div class="movie-title">Paanch Minar</div>
+          <div>Thriller / Mystery</div>
+          <a href="movie3.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Movie 4 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+        <a href="movie4.html">  <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/12a-railway-colony-et00438736-1742467319.jpg" class="img-fluid"></a>
+          <div class="movie-title">Railway Colony</div>
+          <div>Drama / Thriller</div>
+          <a href="movie4.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+       
+    </div>
+  </div>
+
+  </section>
+  
+
+  <!-- EVENTS SECTION -->
+<section id="events">
+  <div class="container mt-5">
+    <h2 class="mb-4">Events For You</h2>
+
+    <div class="row">
+
+      <!-- Event 1 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+         <a href="movie5.html"><img src="https://marketplace.canva.com/EAE7N77AogY/1/0/1131w/canva-live-concert-(poster)-RWodq8Z96Mw.jpg " class="img-fluid" style="height:250px; border-radius:10px;"></a> 
+          <div class="movie-title">Music Concert</div>
+          <a href="movie5.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+        <a href="movie6.html"> <img src="https://img.freepik.com/premium-vector/comedy-stand-up-vector-background_53562-3873.jpg" class="img-fluid" style="height:250px; border-radius:10px;"></a> 
+          <div class="movie-title">Standup Comedy</div>
+          <a href="movie6.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+         <a href="movie7.html"> <img src="https://cdn.vectorstock.com/i/1000v/85/91/magic-show-with-hat-and-wand-vector-56138591.jpg" class="img-fluid" style="height:250px; border-radius:10px;"></a>
+          <div class="movie-title">Magic Show</div>
+          <a href="movie7.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="text-center col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="movie-card">
+        <a href="movie8.html">  <img src="https://c.pxhere.com/photos/4e/68/music_people_lights_concert_entertainment_rock_club_stage-742931.jpg!d" class="img-fluid" style="height:250px; border-radius:10px;"></a>
+          <div class="movie-title">Live Dance Show</div>
+          <a href="movie8.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SPORTS SECTION -->
+<section id="sports">
+  <div class="container mt-5">
+    <h2 class="mb-4">Sports Movies</h2>
+
+    <div class="row">
+
+      
+      <div class="text-center col-12 col-sm-6 col-md-4">
+        <div class="movie-card">
+          <a href="movie9.html">
+            <img src="https://wallpapercave.com/wp/wp5950750.jpg" class="img-fluid" style="height:250px; border-radius:10px;">
+          </a>
+          <div class="movie-title">Jersey </div>
+          <div>Sports / Drama</div>
+          <a href="movie9.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+    
+      <div class="text-center col-12 col-sm-6 col-md-4">
+        <div class="movie-card">
+          <a href="movie10.html ">
+            <img src="https://image.tmdb.org/t/p/original/9YZhJGoIbJtrjDYbENGhR6f6SZE.jpg" class="img-fluid" style="height:250px; border-radius:10px;">
+          </a>
+          <div class="movie-title">Goal</div>
+          <div> Sports / Football Drama</div>
+          <a href="movie10.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="text-center col-12 col-sm-6 col-md-4">
+        <div class="movie-card">
+          <a href="movie11.html">
+            <img src="https://images.justwatch.com/poster/8811328/s718/dangal.%7Bformat%7D" class="img-fluid" style="height:250px; border-radius:10px;">
+          </a>
+          <div class="movie-title">Dangal</div>
+          <div>Sports / Biographical Drama</div>
+          <a href="movie11.html" class="btn btn-warning book-btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="footer-top mt-4 ">
+
+            <div class="item">
+                <i class="fa-solid fa-headset"></i>
+                <p>24/7 CUSTOMER CARE</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-ticket"></i>
+                <p>RESEND BOOKING CONFIRMATION</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <p>SUBSCRIBE TO THE NEWSLETTER</p>
+            </div>
+
+        </div>
+     
+        
+        <div class="footer-sections">
+
+            <div class="section">
+                <h4>MOVIES NOW SHOWING IN VIJAYAWADA</h4>
+                <p>
+                    12A Railway Colony | Sisu: Road to Revenge | Premante | The Girlfriend |
+                    Raju Weds Rambai | Kaantha | Paanch Minar | Mufti Police |
+                    Wicked: For Good | Shiva
+                </p>
+            </div>
+
+            <div class="section">
+                <h4>UPCOMING MOVIES IN VIJAYAWADA</h4>
+                <p>
+                    Darpana The Mirror | Aavani | Lokkhikantapur Local | Giduga | Asambhav |
+                    Yellow (2025) | Haunted 3D: Ghosts of the Past | The Task |
+                    Middle Class | Hind Ki Chadar - Guru Ladho Re
+                </p>
+            </div>
+
+            <div class="section">
+                <h4>MOVIES BY GENRE</h4>
+                <p>
+                    Drama Movies | Action Movies | Romantic Movies | Comedy Movies |
+                    Thriller Movies | Adventure Movies | Crime Movies |
+                    Family Movies | Sci-Fi Movies | War Movies
+                </p>
+            </div>
+
+            <div class="section">
+                <h4>MOVIES BY LANGUAGE</h4>
+                <p>
+                    Movies in Telugu | Movies in English | Movies in Hindi |
+                    Movies in Tamil | Movies in Malayalam | Movies in Portuguese |
+                    Movies in Chattisgarhi | Movies in English 7D | Movies in Haryanavi |
+                    Movies in Sindhi
+                </p>
+            </div>
+
+            <div class="section">
+                <h4>SPORTS EVENTS IN VIJAYAWADA</h4>
+                <p>
+                    Chess | Running | Cricket | Kabaddi | Baseball | Horse Race |
+                    Boat Race | Archery | Bowling | Cycling
+                </p>
+            </div>
+        </div>
+
+
+        </div>
+
+        <hr class="footer-line">
+
+        <div class="social-icons">
+           <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+            <a href="whttps://www.twitter.com/"> <i class="fab fa-twitter"></i></a>
+             <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
+             <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i></a>
+             <a href="https://www.pinterest.com/"> <i class="fab fa-pinterest"></i></a>
+             <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+      
+         
+
+
+<section class="text-center">
+  <h5 style="background-color: black; color: white; padding:10px;">
+    &copy; 2025 CineTime | All Rights Reserved
+  </h5>
+</section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+  
